@@ -23,7 +23,7 @@ export default {
   methods: {
     async fetchDNS() {
       try {
-        const response = await this.$axios.post(`http://api.zahirdcg.fr/dns-explorer?url=${this.url}`);
+        const response = await this.$axios.post(`http://zahirdcg.fr/dns-explorer?url=${this.url}`);
         this.dnsResult = response.data.result;
       } catch (error) {
         console.error('Error fetching DNS data:', error);
